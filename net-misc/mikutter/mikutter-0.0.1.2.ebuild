@@ -8,7 +8,7 @@ EAPI=3
 
 MY_P="${PN}.${PV}"
 
-DESCRIPTION="素晴らしいついったークライアントです。 "
+DESCRIPTION="素晴らしいついったークライアントです。"
 HOMEPAGE="http://mikutter.d.hachune.net/"
 SRC_URI="http://mikutter.d.hachune.net/bin/${MY_P}.tar.gz"
 
@@ -29,6 +29,10 @@ S="${WORKDIR}/${PN}"
 src_unpack() {
 	unpack ${A}
 	epatch "${FILESDIR}/${P}.patch"
+}
+
+src_prepare() {
+	mv ${PN}.rb ${PN}
 }
 
 src_install() {
