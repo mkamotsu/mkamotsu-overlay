@@ -1,0 +1,11 @@
+--- mikutter.rb.org	2010-07-20 10:08:12.000000000 +0900
++++ mikutter.rb	2010-07-20 10:08:35.000000000 +0900
+@@ -1,7 +1,7 @@
+ #! /usr/bin/ruby
+ # -*- coding: utf-8 -*-
+ 
+-Dir.chdir(File.join(File.dirname($0), 'core'))
++Dir.chdir('/usr/share/mikutter')
+ 
+ require 'utils'
+ miquire :core, 'environment'
