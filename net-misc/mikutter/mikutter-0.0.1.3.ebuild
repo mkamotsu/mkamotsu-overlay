@@ -21,7 +21,10 @@ IUSE=""
 
 DEPEND=">=dev-lang/ruby-1.8[ssl]
 		dev-ruby/ruby-gnome2
-		dev-ruby/ruby-hmac"
+		dev-ruby/ruby-hmac
+		dev-ruby/sqlite3-ruby
+		dev-ruby/httpclient
+		x11-libs/libnotify"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${PN}"
