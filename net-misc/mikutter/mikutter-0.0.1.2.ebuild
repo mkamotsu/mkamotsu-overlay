@@ -27,7 +27,7 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/${PN}"
 
 src_unpack() {
-	unpack ${A}
+	unpack "${A}"
 	epatch "${FILESDIR}/${P}.patch"
 }
 
