@@ -17,6 +17,7 @@ KEYWORDS="~alpha ~amd64 ~x86"
 DEPEND=">=dev-lang/python-2.4
 	>=x11-libs/gtk+-2.8
 	>=dev-python/pygtk-2.6
+	dev-python/gst-python
 	app-arch/unzip
 	app-arch/lha
 	!app-misc/aya5"
