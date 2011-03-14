@@ -9,8 +9,8 @@ EAPI=3
 MY_P="${PN}.${PV}"
 
 DESCRIPTION="全てのミク廃、そしてTwitter中毒者へ贈る、至高のTwitter Clientを目指すTwitter Client。略して至高のTwitter Client。"
-HOMEPAGE="http://mikutter.d.hachune.net/"
-SRC_URI="http://mikutter.d.hachune.net/bin/${MY_P}.tar.gz"
+HOMEPAGE="http://mikutter.hachune.net/"
+SRC_URI="http://mikutter.hachune.net/bin/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
