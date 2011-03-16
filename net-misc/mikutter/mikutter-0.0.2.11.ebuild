@@ -14,7 +14,7 @@ SRC_URI="http://mikutter.hachune.net/bin/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86 ~amd64 ~x86-linux ~amd64-linux"
 IUSE=""
 
 DEPEND=">=dev-lang/ruby-1.8[ssl]
