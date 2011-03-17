@@ -1,3 +1,6 @@
-#/bin/sh
+#!/bin/bash
 
-/usr/share/mikutter/mikutter.rb
+EPREFIX=${0%/usr/bin/mikutter}
+
+$EPREFIX/usr/bin/ruby $EPREFIX/usr/share/mikutter/mikutter.rb
+
