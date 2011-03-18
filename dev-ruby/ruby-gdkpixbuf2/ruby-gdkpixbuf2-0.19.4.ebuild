@@ -8,7 +8,7 @@ USE_RUBY="ruby18"
 inherit ruby-ng-gnome2
 
 DESCRIPTION="Ruby GdkPixbuf2 bindings"
-KEYWORDS="~x86-linux ~amd64-linux~x86-linux ~amd64-linux"
+KEYWORDS="~x86-linux ~amd64-linux"
 IUSE=""
 
 RDEPEND="${RDEPEND} x11-libs/gtk+:2"
