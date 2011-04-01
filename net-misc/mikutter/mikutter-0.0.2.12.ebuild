@@ -8,7 +8,7 @@ inherit eutils
 
 MY_P="${PN}.${PV}"
 
-DESCRIPTION="全てのミク廃、そしてTwitter中毒者へ贈る、至高のTwitter Clientを目指すTwitter Client。略して至高のTwitter Client。"
+DESCRIPTION="mikutter is simple, powerful and moeful twitter client."
 HOMEPAGE="http://mikutter.hachune.net/"
 SRC_URI="http://mikutter.hachune.net/bin/${MY_P}.tar.gz"
 
