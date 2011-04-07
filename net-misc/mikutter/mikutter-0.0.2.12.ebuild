@@ -12,18 +12,17 @@ DESCRIPTION="mikutter is simple, powerful and moeful twitter client."
 HOMEPAGE="http://mikutter.hachune.net/"
 SRC_URI="http://mikutter.hachune.net/bin/${MY_P}.tar.gz"
 
-LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64 ~x86-linux ~amd64-linux"
+KEYWORDS="~amd64 ~amd64-linux ~x86 ~x86-linux"
 IUSE=""
 
-DEPEND=">=dev-lang/ruby-1.8[ssl]
-		dev-ruby/ruby-gnome2
-		dev-ruby/ruby-hmac
-		dev-ruby/sqlite3-ruby
-		dev-ruby/httpclient
-		x11-libs/libnotify"
-RDEPEND="${DEPEND}"
+DEPEND=""
+RDEPEND=">=dev-lang/ruby-1.8[ssl]
+	 dev-ruby/ruby-gnome2
+	 dev-ruby/ruby-hmac
+	 dev-ruby/sqlite3-ruby
+	 dev-ruby/httpclient
+	 x11-libs/libnotify"
 
 S="${WORKDIR}/${PN}"
 
@@ -33,7 +32,9 @@ src_install() {
 	insinto /usr/share/mikutter
 	doins -r core plugin
 	exeinto /usr/bin
-	doexe ${FILESDIR}/mikutter
+	doexe "${FILESDIR}"/${P}
+	exeinto /usr/share/applications
+	doexe "${FILESDIR}"/${P}.desktop
 	dodoc LICENSE README
 }
 
