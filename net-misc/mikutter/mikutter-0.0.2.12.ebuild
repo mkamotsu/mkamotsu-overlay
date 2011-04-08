@@ -32,9 +32,9 @@ src_install() {
 	insinto /usr/share/mikutter
 	doins -r core plugin
 	exeinto /usr/bin
-	doexe "${FILESDIR}"/${PN}
+	doexe "${FILESDIR}/${PN}"
 	exeinto /usr/share/applications
-	doexe "${FILESDIR}"/${PN}.desktop
+	doins "${FILESDIR}/${PN}.desktop"
 	dodoc LICENSE README
 }
 
