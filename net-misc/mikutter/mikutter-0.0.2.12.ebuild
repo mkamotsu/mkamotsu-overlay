@@ -31,10 +31,10 @@ src_install() {
 	doexe mikutter.rb
 	insinto /usr/share/mikutter
 	doins -r core plugin
+	insinto /usr/share/applications
+	doins "${FILESDIR}/${PN}.desktop"
 	exeinto /usr/bin
 	doexe "${FILESDIR}/${PN}"
-	exeinto /usr/share/applications
-	doins "${FILESDIR}/${PN}.desktop"
 	dodoc LICENSE README
 }
 
