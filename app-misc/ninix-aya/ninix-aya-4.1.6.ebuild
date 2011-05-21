@@ -4,16 +4,14 @@
 
 EAPI=3
 
-inherit python
-
-DESCRIPTION=""
-HOMEPAGE=""
+DESCRIPTION="Interactive fake-AI Ukagaka-compatible desktop mascot program"
+HOMEPAGE="http://ninix-aya.sourceforge.jp/"
 SRC_URI="mirror://sourceforge.jp/${PN}/52006/${P}.tgz"
 
-LICENSE=""
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gnome http"
+IUSE="gnome"
 
 DEPEND=""
 RDEPEND="${DEPEND}
