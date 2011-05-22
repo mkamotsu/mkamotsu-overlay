@@ -16,7 +16,7 @@ SRC_URI="http://mikutter.hachune.net/bin/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 DEPEND=""
