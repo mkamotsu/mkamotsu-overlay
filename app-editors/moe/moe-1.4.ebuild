@@ -15,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=">=sys-devel/gcc-3.3.6
-        >=sys-libs/ncurses-5.4
+		>=sys-libs/ncurses-5.4
 		app-arch/lzip"
 RDEPEND=""
 
