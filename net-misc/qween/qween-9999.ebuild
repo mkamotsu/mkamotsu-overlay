@@ -17,7 +17,7 @@ IUSE=""
 
 DEPEND=">=x11-libs/qt-core-4.6
         >=x11-libs/qt-gui-4.6
-		dev-libs/openssl"
+        dev-libs/openssl"
 RDEPEND=""
 
 pkg_setup() {
