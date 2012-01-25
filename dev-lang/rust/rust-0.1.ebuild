@@ -20,3 +20,6 @@ DEPEND="|| ( sys-devel/gcc:4.4[cxx] =sys-devel/clang-3 )
 		net-misc/curl"
 RDEPEND="${DEPEND}"
 
+src_install() {
+	emake DESTDIR="${D}" install || die "install failed"
+}
