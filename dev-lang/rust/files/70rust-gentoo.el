@@ -1,2 +1,3 @@
 (add-to-list 'load-path "@SITELISP@")
-(autoload 'rust-mode "rust-highlight-edits" nil t)
+(add-to-list 'auto-mode-alist '("//.rs$" . rust-mode))
+(autoload 'rust-mode "rust-mode" t)
