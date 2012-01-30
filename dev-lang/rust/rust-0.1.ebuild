@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="emacs vim-syntax"
 
-DEPEND="|| ( sys-devel/gcc:4.4[cxx] =sys-devel/clang-3 )
+DEPEND="|| ( >=sys-devel/gcc-4.4[cxx] =sys-devel/clang-3 )
 		>=dev-lang/python-2.6
 		>=dev-lang/perl-5.0
 		>=sys-devel/make-3.8.1
@@ -24,6 +24,7 @@ DEPEND="|| ( sys-devel/gcc:4.4[cxx] =sys-devel/clang-3 )
 RDEPEND="${DEPEND}"
 
 SITEFILE="70${PN}-gentoo.el"
+BYTECOMPFLAGS="-L src/etc/emacs"
 
 src_compile() {
 	use emacs && elisp-compile src/etc/emacs/{cm,rust}-mode.el || die
@@ -71,4 +72,12 @@ src_install() {
 		elisp-install ${PN} src/etc/emacs/{cm,rust}-mode.{el,elc} || die
 		elisp-site-file-install "${FILESDIR}/${SITEFILE}" || die
 	fi
+}
+
+pkg_postinst() {
+	use emacs && elisp-site-regen
+}
+
+pkg_postrm() {
+	use emacs && elisp-site-regen
 }
