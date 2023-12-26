@@ -1,0 +1,5 @@
+INSTALL
+
+1. eselect repository add mkamotsu-overlay git https://github.com/mkamotsu/mkamotsu-overlay.git 
+2. emain sync --repo mkamotsu-overlay
+
