@@ -1,0 +1,22 @@
+diff --git a/src/save.c b/src/save.c
+index f6b8a13..c257d4d 100644
+--- a/src/save.c
++++ b/src/save.c
+@@ -296,6 +296,9 @@ write_pack(object *pack, FILE *fp)
+ void
+ read_pack(object *pack, FILE *fp, boolean is_rogue)
+ {
++    static char *da[WEAPONS] = {
++	"1d1", "1d1", "1d2", "1d3", "1d4", "2d3", "3d4", "4d5"
++    };
+     object read_obj, *new_obj;
+ 
+     for (;;) {
+@@ -316,6 +319,7 @@ read_pack(object *pack, FILE *fp, boolean is_rogue)
+ 				    ? 1 : 0));
+ 	    }
+ 	}
++        new_obj->damage = da[new_obj->which_kind];
+ 	pack->next_object = new_obj;
+ 	pack = new_obj;
+     }

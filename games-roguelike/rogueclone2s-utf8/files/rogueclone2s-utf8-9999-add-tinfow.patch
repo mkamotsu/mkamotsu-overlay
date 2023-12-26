@@ -1,0 +1,12 @@
+diff --git a/configure.ac b/configure.ac
+index 2e9c8db..d8cc9a5 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -30,6 +30,7 @@ AC_FUNC_STAT
+ AC_FUNC_MALLOC
+ AC_CHECK_HEADERS([windows.h locale.h])
+ AC_CHECK_LIB([ncursesw], [initscr])
++AC_CHECK_LIB([tinfow], [stdscr])
+ AC_CHECK_LIB([kernel32], [_sleep])
+ AC_CHECK_FUNCS([chdir getcwd getenv getlogin memset putenv setenv setlocale strchr sleep])
+ AC_CHECK_FUNCS([assume_default_colors attr_get])
