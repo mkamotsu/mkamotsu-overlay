@@ -21,7 +21,7 @@ DEPEND="dev-util/cmake
 	dev-util/gtk-doc
 	dev-libs/json-c
 	sys-libs/libmodulemd
-	syb-libs/librepo
+	sys-libs/librepo
 	sys-libs/libsolv
 	dev-python/sphinx
 	dev-python/breathe
