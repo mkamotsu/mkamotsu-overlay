@@ -23,11 +23,6 @@ BDEPEND=""
 
 MYCMAKEARGS='-DPYTHON_DESIRED="3" -DWITH_MAN=0'
 
-pkg_postinst() {
-	default
-	# tmpfiles_process
-}
-
 src_install() {
 	default
 	cmake_src_install
