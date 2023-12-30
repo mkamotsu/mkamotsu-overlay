@@ -14,14 +14,18 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND=">=dev-lang/python-3
-	dev-python/sphinx"
+	dev-python/sphinx
+	sys-libs/libdnf
+	app-arch/rpm[python]
+	sys-libs/libcomps"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
 MYCMAKEARGS='-DPYTHON_DESIRED="3" -DWITH_MAN=0'
 
 pkg_postinst() {
-	tmpfiles_process
+	default
+	# tmpfiles_process
 }
 
 src_install() {
